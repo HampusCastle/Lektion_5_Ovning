@@ -11,6 +11,17 @@ public class Main {
         String name = sc.nextLine();
         System.out.println("Player #1 " + name);
 
+        System.out.println("For your next task please select a number");
+        int number = sc.nextInt();
+        for (int i = 0; i < number; i++) {
+            System.out.println(i);
+        }
+
+        do {
+            System.out.println("Give me a number");
+            int newNumber = sc.nextInt();
+            System.out.println("Your number was " + newNumber);
+        }while(true);
 
 
 
