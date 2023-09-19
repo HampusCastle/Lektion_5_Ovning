@@ -39,17 +39,17 @@ public class Main {
         // }  while(true);
         boolean isRunning = true;
         do {
-            System.out.println("Select a choice \n-Stop\n-1\n-Default");
-            String choice = sc.nextLine();
+            System.out.println("Select a choice \n1 Stop\n2 Bad choice\n3 Default");
+            int choice = sc.nextInt();
             switch (choice) {
-                case "Stop":
+                case 1:
                     System.out.println("Goodbye");
                     isRunning = false;
                     break;
-                case "1":
+                case 2:
                     System.out.println("Throwing!");
                     break;
-                case "Default":
+                case 3:
                     System.out.println("Wrong input");
                     break;
                 default:
